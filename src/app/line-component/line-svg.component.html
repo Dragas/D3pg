@@ -1,0 +1,22 @@
+<svg:g>
+  <svg:line
+    [attr.x1]="link.getSourceX()"
+    [attr.y1]="link.getSourceY()"
+    [attr.x2]="link.getDestinationX()"
+    [attr.y2]="link.getDestinationY()"
+    stroke="black"/>
+  <svg:polygon
+    [attr.width]="2*getDistance()"
+    [attr.height]="2*getDistance()"
+    [attr.points]="getPointsString()"
+    style="fill:lime; stroke: black"
+    [attr.transform]="getTransformString()"
+    />
+  <svg:text
+    [attr.x]="getTextX()"
+    [attr.y]="getTextY()"
+    [attr.transform]="getTextTransformString()"
+  >
+    {{getText()}}deg
+  </svg:text>
+</svg:g>

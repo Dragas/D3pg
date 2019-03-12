@@ -1,0 +1,14 @@
+<svg:g [attr.transform]="">
+  <svg:circle
+    [attr.cx]="node.x"
+    [attr.cy]="node.y"
+    r="10"
+    style="fill: white; stroke:black;">
+  </svg:circle>
+  <svg:text
+    [attr.x]="node.x"
+    [attr.y]="node.y + 100"
+  >
+    {{node.id}}
+  </svg:text>
+</svg:g>
